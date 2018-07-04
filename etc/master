@@ -52,7 +52,7 @@ gitfs_provider: pygit2
 # Note: file:// repos will be treated as a remote, so refs you want used must
 # exist in that repo as *local* refs.
 gitfs_remotes:
-  - https://github.com/epita/salt-cri/:
+  - https://github.com/DarkCookies/salt-cri/:
     - saltenv:
       - base:
         - root: states
@@ -74,11 +74,11 @@ pillar_roots:
 
 ext_pillar:
   - git:
-    - https://github.com/epita/salt-cri/:
+    - https://github.com/DarkCookies/salt-cri/:
       - root: pillars
       - env: base
       - name: base
-    - https://github.com/epita/salt-cri/:
+    - https://github.com/DarkCookies/salt-cri/:
       - root: pillars
       - env: dev
       - name: dev
